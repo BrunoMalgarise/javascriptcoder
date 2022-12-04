@@ -1,6 +1,6 @@
 //Nombre de Usuario y Bienvenida
 let nombre = prompt("Ingrese tu nombre")
-alert("Hola " + nombre + " ,bienvenido");
+alert("Hola " + nombre + " ,bienvenido/a");
 
 let edad = prompt("Ingresa tu edad")
 if (edad < 18) {
@@ -21,51 +21,12 @@ function numeros(opciones) {
 }
 
 numeros();
-// let signo = prompt("Ingresa un signo para tu operacion: + Suma, - Resta, * Multiplicación , / Division")
-
-// function calculadora(signo) {
-
-//     switch (signo) {
-//         case "+":
-//             let suma = parseInt(numero1) + parseInt(numero2)
-//             console.log("Elegiste sumar, y el resultado es: " + suma);
-//             resultado = suma;
-//             break;
-
-//         case "-":
-//             let resta = parseInt(numero1) - parseInt(numero2)
-//             console.log("Elegiste restar, y el resultado es: " + resta);
-//             resultado = resta;
-//             break;
-
-//         case "*":
-//             let multiplicacion = parseInt(numero1) * parseInt(numero2)
-//             console.log("Elegiste multiplicar, y el resultado es: " + multiplicacion);
-//             resultado = multiplicacion;
-//             break;
-
-//         case "/":
-//             if (numero2 == 0) {
-//                 console.log("no se puede dividir por 0");
-//             } else {
-//                 let division = parseInt(numero1) / parseInt(numero2)
-//                 console.log("Elegiste dividir, y el resultado es: " + division);
-//                 resultado = division;
-//                 break;
-//             }
-//         default:
-//             console.log("Error, ingresa un signo valido.");
-//             break;
-//     }
-
-// }
-// resultado = (calculadora(signo));
-// console.log("Nos vemos " + nombre );
 
 let opciones = prompt("Elegí una opción: \n1- Realizar una suma. \n2- Realizar una resta. \n3- Realizar una multiplicación. \n4- Realizar una división. \n5- Ingresar otros dos números.\nPresioná X para finalizar.");
 
-
+//el While mientras sea distinto de X sigue preguntando.
 while (opciones != "X") {
+//Opciones para el usuario segun la operacion que quiera hacer.
     switch (opciones) {
         case "5":
             numeros();
@@ -98,12 +59,6 @@ while (opciones != "X") {
             console.log("Error, ingresa una opción valida.");
             break;
     }
-
-
-
-
-
-
     //Condicion de salida de while
     opciones = prompt("Elegí una opción: \n1- Realizar una suma. \n2- Realizar una resta \n3- Realizar una multiplicación. \n4- Realizar una división. \n5- Ingresar otros dos números. \nPresioná X para finalizar.");
 }
